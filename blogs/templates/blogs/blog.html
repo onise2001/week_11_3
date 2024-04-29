@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Blogs:</h1>
+
+    <ol>
+    
+    {% for blog in blogs %}
+    <li>
+        <h3>Title: {{ blog.title }}</h3>
+        <h3>Text: <p>{{ blog.text }}</p> </h3>
+        <h3>Author: {{ blog.author }}</h3>
+        <br>
+    
+    </li>
+
+    {% endfor %}
+    </ol>
+    
+</body>
+</html>
